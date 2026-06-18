@@ -673,6 +673,13 @@
       margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-x-3 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -1247,6 +1254,9 @@
   .text-\[\#1d4ed8\] {
     color: #1d4ed8;
   }
+  .text-\[\#1d63b8\] {
+    color: #1d63b8;
+  }
   .text-\[\#2C6E9E\] {
     color: #2C6E9E;
   }
@@ -1267,6 +1277,9 @@
   }
   .text-\[\#60a5fa\]\/50 {
     color: color-mix(in oklab, #60a5fa 50%, transparent);
+  }
+  .text-\[\#0066cc\] {
+    color: #0066cc;
   }
   .text-\[\#69A6D3\] {
     color: #69A6D3;
@@ -1303,6 +1316,9 @@
   }
   .text-gray-700 {
     color: var(--color-gray-700);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
   }
   .text-gray-900 {
     color: var(--color-gray-900);
@@ -2224,6 +2240,11 @@
       margin-top: calc(var(--spacing) * 14);
     }
   }
+  .lg\:mb-0 {
+    @media (width >= 64rem) {
+      margin-bottom: 0;
+    }
+  }
   .lg\:mb-5 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 5);
@@ -2309,6 +2330,11 @@
       max-width: none;
     }
   }
+  .lg\:max-w-xl {
+    @media (width >= 64rem) {
+      max-width: var(--container-xl);
+    }
+  }
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2334,6 +2360,11 @@
       align-items: flex-start;
     }
   }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
+    }
+  }
   .lg\:gap-6 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 6);
@@ -2347,6 +2378,11 @@
   .lg\:gap-10 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:gap-12 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 12);
     }
   }
   .lg\:gap-16 {
